@@ -1,0 +1,45 @@
+.animated-background{
+      background: linear-gradient(
+      to right,black,gray,black);
+      background-size: 400% 400%;
+      animation: animate-background 10s infinite ease-in-out;
+}
+@framekeys animate background{
+     0%{
+     background-postion: 0 50%;
+
+     }
+     50%{
+     background-postion: 100 50%;
+     }
+     100%{
+     background-postion: 0 50%;
+     }
+}
+.login
+{
+ background-color:green;
+ color:silver;
+ padding:15px;
+ border-radius:10px;
+}
+.enter-area
+{
+ position:absolute;
+ font-family:roboto;
+ background:gray;
+ color:white;
+ border-radius:20px;
+ width:30%;
+ opacity:100%;
+}
+.ihrd
+{
+position:absolute;
+size:40px;
+width:90px;
+border-radius:20px;
+padding:-20%;
+}
+
+

@@ -1,0 +1,78 @@
+<DOCTYPE html>
+<head>
+
+<title>
+
+main_page
+
+</title>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['bar']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', 'no.placement'],
+      ['2019', 56],
+      ['2021', 71],
+      ['2022', 42],
+    ]);
+
+    var options = {
+      chart: {
+        title: 'Placement Performance',
+        subtitle: 'Total no.of placement 2019-2022',
+      }
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+  }
+</script>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+     <div class="sidemenu">
+          <div class="heading">
+           <h2>PROFILE</h2>
+           </div>
+           <div class="list" >
+            <ul>
+             <li><b>About Us</b></li>
+             <li><b>Admistration</b></li>
+             <li><b>Placement Report</b></li>
+             <li><b>Recruiters</b></li>
+             <li><b>Contact Us</b></li>
+           
+            </ul>
+          </div>
+            </div>
+            <div class="image">
+              <input type="image" src="IHRD_Logo.jpg"  height="10%" >
+             </input>
+              </div>
+            <br><p style="text-align:center; color:black"><b>College of Engineering Kalloopara</b><br>
+(undertaking & managed by Govt. of Kerala)</p><br><br>
+
+    <h2> <p style="text-align:center; color:red;"><b>Placement Details</p></h2>
+    <h4>
+      <p class="home">College of Engineering Kallooppara (CEK), located in the Sylvan hills of Pathanamthitta district <br>
+      in the state of Kerala is one of the premier institutions among the new generation Engineering colleges of South India.<br>
+      Ever since its inception under the aegis of the Institute of Human Resources Development (IHRD-Established by the Govt. of Kerala), <br>
+      the college has already made its presence felt in the technical horizon of the State. <br>
+      The College is affiliated to the APJ Abdul Kalam Technological University (APJAKTU) and is approved by the All India Council for Technical Education (AICTE),<br> 
+      Government of India. Kallooppara is the land with the most divine touch of tranquility <br>and peace in Pathanamthitta District and part of Mallappally Taluk.
+      Kallooppara is known for its religious harmony between all the sects of god loving
+      </p>
+    </h4>
+    <div class="chart" id="columnchart_material"></div>
+
+</body>
+
+</html>
