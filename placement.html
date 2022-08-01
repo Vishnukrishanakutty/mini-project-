@@ -1,0 +1,191 @@
+<html>
+    <header>
+        <title>
+        </title>
+    </header>    
+    <body>
+     <h1 style="text-align: CENTER;">Placement Report</h1>
+<div class="chart" id="columnchart_material"></div>
+ <form>
+  <div class="file">
+    <p>Enter the current year placement data </p>
+    <input type="file"  value="choose file">  </input>
+    <br> <br>
+    <input type="button" value="submit"></input>
+  </div>
+
+<div>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Placement', 'offers'],
+          ['TCS',     9],
+          ['ORISYS INDIA',      3],
+          ['EXPERION',  2],
+          ['WIPRO', 5],
+          ['IBS',    4],
+          ['INFOSIS',    7],
+          ['FACE',    7],
+          ['INTERLAND',    1],
+          ['ECSFIN',    1],
+          ['FACTWEAVERS',    1],
+          ['CTS',    7]
+      
+        ]);
+
+        var options = {
+          title: 'PLACEMENT OFFER-2019',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('2019_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+  <div id="2019_3d" style="width: 600px; height: 400px;"></div>
+
+</div>
+
+
+
+
+  <div >
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'PALCEMENT'],
+          ['TCS',     17],
+          ['INFOSIS',      5],
+          ['ACCENTURE',  1],
+          ['6D TECHNOLOGIES', 3],
+          ['TCSFIN',    2],
+          ['VRIZE',    1],
+          ['FACTWEAERS',    1],
+          ['RAPIDVALUE',    1],
+          ['INTERLAND',    2],
+          ['QUESTGLOBAL',    4],
+          ['EXPERION',    1],
+          ['MARIAAPS-MARINE SOLUTION',    1],
+          ['CTS',    1],
+          ['WIPRO',    2],
+          ['TRAVANCORE ANALYTICS',    1],
+          ['CSS CORP',    2],
+          ['IBS',    3],
+          ['DTALKS SOLUTION',    2],
+          ['VALOREM REPLY',    1],
+          ['KRANS CONSULTING',    1],
+          ['UST GLOBAL',    2],
+          ['SEQATO',    1],
+          ['CAPGEMANI',    1],
+          ['EY',    1],
+          ['CEK',    3]
+        ]);
+
+        var options = {
+          title: 'PLACEMENT OFFERS -2021',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+    <div id="piechart_3d" style="width: 600px; height: 400px;"></div>
+    <div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['INTERSHIP', 'NO.OF INTERNSHIPS'],
+          ['TECH MAHINDRA',     1],
+          ['QSPIDERS',      10]
+      
+        ]);
+       
+        var options = {
+          title: 'OFFER THROUGH INTERSHIP-2021',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('pie_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+    </div>
+    <div id="pie_3d" style="width: 600px; height: 400px;"></div>
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['PLACEMENT', 'OFFERS'],
+          ['TCS',     17],
+          ['WIPRO',      7],
+          ['VIRTUSA',  3],
+          ['QUEST GLOBAL', 5],
+          ['CTS',    5],
+          ['INFOSIS',    5],
+          ['6D TECHNOLOGIS',    1],
+          ['GADGEON',    1],
+          ['CAPGEMANI',    2],
+          ['MINDTREE',    1],
+          ['PREVALENT AI',    1],
+          ['BYJUS',    1],
+          ['SPERIDIAN',     3 ]
+        ]);
+
+        var options = {
+          title: 'PLACEMENT OFFERS-2022',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('2022_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+<div id="2022_3d" style="width: 600px; height: 400px;"></div>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['INTERSHIP', 'OFFERS'],
+      ['QSPIDER',     6],
+      ['CRANES',  5],
+      ['PENTAGON SPACE', 3],
+      ['TECHNOLOGICS',    1]
+    ]);
+
+    var options = {
+      title: 'OFFERS THROUGH INTERSHIP-2022',
+      is3D: true,
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('INTERSHIP-2022_3d'));
+    chart.draw(data, options);
+  }
+</script>
+
+<div id="INTERSHIP-2022_3d" style="width: 600px; height: 400px;"></div>
+
+  </div>
+
+   
+
+
+ </form>
+    </body>
